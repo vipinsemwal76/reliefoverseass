@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relief overseas consultant | study & settle abroad</title>
+    <style>
+        /* --- general styles --- */
+        :root {
+            --primary-color: #0d2c54; /* navy blue */
+            --accent-color: #d4a017; /* gold */
+            --light-bg: #f4f7f6;
+            --text-color: #333;
+            --white: #ffffff;
+            --success: #28a745;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'segoe ui', arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            scroll-behavior: smooth;
+        }
+
+        a { text-decoration: none; color: inherit; }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- header --- */
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo { font-size: 1.4rem; font-weight: 800; color: var(--accent-color); letter-spacing: 1px; }
+
+        nav ul { list-style: none; display: flex; gap: 20px; }
+        nav a { font-weight: 500; transition: 0.3s; }
+        nav a:hover { color: var(--accent-color); }
+
+        /* --- hero --- */
+        .hero {
+            background: linear-gradient(rgba(13, 44, 84, 0.85), rgba(13, 44, 84, 0.85)), url('https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .hero h1 { font-size: 3rem; margin-bottom: 15px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
+
+        /* --- buttons --- */
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            padding: 14px 35px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover { background-color: #f0b41a; transform: scale(1.05); }
+
+        /* --- section titles --- */
+        .section { padding: 80px 0; }
+        .section-title { font-size: 2.2rem; color: var(--primary-color); text-align: center; margin-bottom: 10px; }
+        .section-subtitle { text-align: center; margin-bottom: 50px; color: #666; font-style: italic; }
+
+        /* --- countries grid --- */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            border-bottom: 4px solid var(--accent-color);
+        }
+        .card:hover { transform: translatey(-10px); }
+        .card h3 { color: var(--primary-color); margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .card p { font-size: 0.95rem; margin-bottom: 8px; }
+        .card strong { color: #555; }
+
+        /* --- contact form section --- */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .contact-info h3 { color: var(--primary-color); margin-bottom: 20px; }
+        .contact-info p { margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+
+        form { display: flex; flex-direction: column; gap: 15px; }
+        input, select, textarea {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            width: 100%;
+        }
+        textarea { height: 120px; resize: none; }
+
+        #form-message {
+            display: none;
+            margin-top: 15px;
+            padding: 10px;
+            background: #d4edda;
+            color: #155724;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        /* --- footer --- */
+        footer { background: var(--primary-color); color: var(--white); padding: 50px 0 20px; text-align: center; }
+        .footer-logo { font-size: 1.5rem; color: var(--accent-color); margin-bottom: 20px; display: block; }
+
+        @media (max-width: 768px) {
+            .contact-container { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2.2rem; }
+            nav ul { display: none; } /* simplified for mobile */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">relief overseas</div>
+            <nav>
+                <ul>
+                    <li><a href="#destinations">countries</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#contact">contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>relief overseas consultant</h1>
+            <p>your trusted partner for global work, study, and settlement</p>
+            <a href="#contact" class="btn">start your application</a>
+        </div>
+    </section>
+
+    <section id="destinations" class="section">
+        <div class="container">
+            <h2 class="section-title">global opportunities</h2>
+            <p class="section-subtitle">explore popular destinations and their requirements</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>canada</h3>
+                    <p><strong>focus:</strong> tech, healthcare & trades</p>
+                    <p><strong>path:</strong> express entry / pr</p>
+                    <p><strong>time:</strong> 6-12 months</p>
+                    <p><strong>contact:</strong> vipin</p>
+                </div>
+
+                <div class="card">
+                    <h3>australia</h3>
+                    <p><strong>focus:</strong> nursing, engineering, it</p>
+                    <p><strong>path:</strong> skilled migration</p>
+                    <p><strong>time:</strong> 4-8 months</p>
+                    <p><strong>contact:</strong> anamika</p>
+                </div>
+
+                <div class="card">
+                    <h3>united kingdom</h3>
+                    <p><strong>focus:</strong> skilled workers & graduates</p>
+                    <p><strong>path:</strong> work visa sponsorship</p>
+                    <p><strong>time:</strong> 3-6 months</p>
+                    <p><strong>contact:</strong> vipin</p>
+                </div>
+
+                <div class="card">
+                    <h3>germany</h3>
+                    <p><strong>focus:</strong> engineering & manufacturing</p>
+                    <p><strong>path:</strong> job seeker / blue card</p>
+                    <p><strong>time:</strong> 2-4 months</p>
+                    <p><strong>contact:</strong> vipin</p>
+                </div>
+
+                <div class="card">
+                    <h3>uae (dubai)</h3>
+                    <p><strong>focus:</strong> finance & tourism</p>
+                    <p><strong>path:</strong> direct job placement</p>
+                    <p><strong>time:</strong> 1-3 months</p>
+                    <p><strong>contact:</strong> vipin</p>
+                </div>
+
+                <div class="card">
+                    <h3>singapore</h3>
+                    <p><strong>focus:</strong> mid-level professionals</p>
+                    <p><strong>path:</strong> employment pass</p>
+                    <p><strong>time:</strong> 2-4 weeks</p>
+                    <p><strong>contact:</strong> anamika</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section" style="background-color: #eceff1;">
+        <div class="container">
+            <h2 class="section-title">free consultation</h2>
+            <p class="section-subtitle">fill out the form and our experts will contact you</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>get in touch</h3>
+                    <p><strong>📍 address:</strong> relief overseas hq</p>
+                    <p><strong>📞 phone:</strong> +91-6397004606</p>
+                    <p><strong>✉️ email:</strong> vipinsemwal76@gmail.com</p>
+                    <p><strong>👤 ceo:</strong> vipin semwal</p>
+                    <p><strong>👤 lead consultant:</strong> anamika bhatt</p>
+                    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+                    <p><em>services: visa prep, job placement, interview coaching, and post-arrival support.</em></p>
+                </div>
+
+                <div>
+                    <form id="inquiryform">
+                        <input type="text" placeholder="your full name" required>
+                        <input type="email" placeholder="email address" required>
+                        <input type="tel" placeholder="phone number" required>
+                        <select required>
+                            <option value="">select destination</option>
+                            <option value="canada">canada</option>
+                            <option value="australia">australia</option>
+                            <option value="uk">united kingdom</option>
+                            <option value="germany">germany</option>
+                            <option value="uae">uae</option>
+                            <option value="other">other</option>
+                        </select>
+                        <textarea placeholder="tell us about your background (education/experience)"></textarea>
+                        <button type="submit" class="btn">submit my details</button>
+                    </form>
+                    <div id="form-message">thank you! your message has been sent successfully. we will call you shortly.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <span class="footer-logo">relief overseas consultant</span>
+            <p>guiding you to a brighter future abroad.</p>
+            <p style="margin-top: 20px; font-size: 0.8rem; opacity: 0.6;">&copy; 2026 relief overseas. all rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getelementbyid('inquiryform').addeventlistener('submit', function(e) {
+            e.preventdefault();
+            // hide the form and show success message
+            this.style.display = 'none';
+            document.getelementbyid('form-message').style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>
